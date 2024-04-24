@@ -1,0 +1,115 @@
+// @use '@angular/material' as mat;
+
+// @include mat.core();
+
+// // GAMA DE COLORES
+// $my-primary-color:(
+//   50 : #f6ece1,
+//   100 : #e9cfb4,
+//   200 : #daaf83,
+//   300 : #cb8f51,
+//   400 : #bf772b,
+//   500 : #b45f06,
+//   600 : #ad5705,
+//   700 : #a44d04,
+//   800 : #9c4303,
+//   900 : #8c3202,
+//   A100 : #ffccb8,
+//   A200 : #ffa785,
+//   A400 : #ff8252,
+//   A700 : #ff7039,
+//   contrast: (
+//       50 : #000000,
+//       100 : #000000,
+//       200 : #000000,
+//       300 : #000000,
+//       400 : #000000,
+//       500 : #ffffff,
+//       600 : #ffffff,
+//       700 : #ffffff,
+//       800 : #ffffff,
+//       900 : #ffffff,
+//       A100 : #000000,
+//       A200 : #000000,
+//       A400 : #000000,
+//       A700 : #000000,
+//   )
+// );
+
+// $my-secondary-color: (
+//   100: #c5e9c9,
+
+//     200 : #8cfdb8,
+//     500 : #18fa70,
+//     600 : #15f968,
+
+//     contrast: (
+
+//         200 : #000000,
+//         500 : #000000,
+//         600 : #ffffff,
+
+//     )
+// );
+
+
+// $verdete-palette: (
+//  50: #339f74,
+//  100: #c5e9c9,
+//  200: #a3da9f,
+//  300: #85cb79,
+//       700 : #000000,
+//       // ... continues to 900
+//  contrast: (
+//    50: rgba(black, 0.87),
+//    100: rgba(black, 0.87),
+//    200: rgba(black, 0.87),
+//    300: white,
+//  )
+// );
+
+// $my-warn-color:(/* For use in src/lib/core/theming/_palette.scss */
+// 100: #c5e9c9,
+
+//     200 : #daaf83,
+//     500 : #b45f06,
+//     600 : #ad5705,
+//       700 : #000000,
+//       A100 : #ffccb8,
+//     A200 : #ffa785,
+//     A400 : #ff8252,
+//     A700 : #ff7039,
+//     contrast: (
+
+//         200 : #000000,
+//         500 : #ffffff,
+//         600 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #000000,
+//     )
+// );
+
+// $background: mat.get($my-primary-color, background);
+
+
+// // PALETA DE COLORES
+// $my-palette-primary : mat.define-palette($my-primary-color,500);
+// $my-palette-secondary : mat.define-palette($verdete-palette,300);
+// $my-palette-warn : mat.define-palette($my-warn-color,600);
+// // $my-palette-primary : mat-palette($my-primary-color);
+
+// // TEMA PROPIO
+// $my-theme: mat.define-light-theme((
+//   color:(
+//     primary:$my-palette-primary,
+//     accent: $my-palette-secondary,
+//     warn: $my-palette-warn
+//   )
+// ));
+
+
+// // APLICAR NUESTRO TEMA A ANGULAR
+
+// @include mat.all-component-themes($my-theme);

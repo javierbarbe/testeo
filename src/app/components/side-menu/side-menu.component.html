@@ -1,0 +1,37 @@
+<!-- <mat-drawer-container class="example-container" style="height: 100%;"
+(backdropClick)="close()"
+>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    @if (showFiller) {
+      <p>Lorem, ipsum dolor sit amet consectetur.</p>
+    }
+    <button (click)="showFiller = !showFiller" mat-raised-button color="warn">
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()" color="primary">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container> -->
+
+<mat-sidenav-container
+  class="example-container"
+  (backdropClick)="close('backdrop')"
+  style="height: 100vh;"
+  >
+  <!-- hasBackdrop="false" -->
+  <mat-sidenav #sidenav disableClose mode="push" >
+    INSIDE SIVENAV
+    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- <p><button mat-button (click)="sidenav.open()">Open</button></p> -->
+    <!-- <p>Closed due to: {{reason}}</p> -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
